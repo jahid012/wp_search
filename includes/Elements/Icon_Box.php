@@ -22,7 +22,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'Icon Box', 'eg-addons' );
+        return esc_html__( 'Icon Box', 'jh-addons' );
     }
 
     public function get_icon() {
@@ -30,7 +30,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
     }
 
     public function get_categories() {
-        return [ 'eg-addons-elementor' ];
+        return [ 'jh-addons-elementor' ];
     }
 
     protected function _register_controls() {
@@ -38,7 +38,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 	    $this->start_controls_section(
 			'_section_icon',
 			[
-				'label' => __( 'Content', 'eg-addons' ),
+				'label' => __( 'Content', 'jh-addons' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -60,11 +60,11 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'eg-addons' ),
+				'label' => __( 'Title', 'jh-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'EG Icon Box', 'eg-addons' ),
-				'placeholder' => __( 'Type Icon Box Title', 'eg-addons' ),
+				'default' => __( 'EG Icon Box', 'jh-addons' ),
+				'placeholder' => __( 'Type Icon Box Title', 'jh-addons' ),
 				'dynamic' => [
 					'active' => true,
 				]
@@ -74,7 +74,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Box Link', 'eg-addons' ),
+				'label' => __( 'Box Link', 'jh-addons' ),
 				'separator' => 'before',
 				'type' => Controls_Manager::URL,
 				'placeholder' => 'https://example.com',
@@ -88,23 +88,23 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'eg-addons' ),
+				'label' => __( 'Alignment', 'jh-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'eg-addons' ),
+						'title' => __( 'Left', 'jh-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'eg-addons' ),
+						'title' => __( 'Center', 'jh-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'eg-addons' ),
+						'title' => __( 'Right', 'jh-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'eg-addons' ),
+						'title' => __( 'Justify', 'jh-addons' ),
 						'icon' => 'eicon-text-align-justify',
 					],
 				],
@@ -124,7 +124,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 	$this->start_controls_section(
 		'_section_box_layout_style',
 		[
-			'label' => __( 'Box Layout', 'eg-addons' ),
+			'label' => __( 'Box Layout', 'jh-addons' ),
 			'tab'   => Controls_Manager::TAB_STYLE,
 		]
 	);
@@ -132,7 +132,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 	$this->add_responsive_control(
 		'box_padding',
 		[
-			'label' => __( 'Padding', 'eg-addons' ),
+			'label' => __( 'Padding', 'jh-addons' ),
 			'type' =>  Controls_Manager::DIMENSIONS,
 			'size_units' => [ 'px', '%' ],
 			'selectors' => [
@@ -152,7 +152,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 	$this->add_responsive_control(
 		'box_border_radius',
 		[
-			'label' => __( 'Border Radius', 'eg-addons' ),
+			'label' => __( 'Border Radius', 'jh-addons' ),
 			'type' => Controls_Manager::DIMENSIONS,
 			'size_units' => [ 'px', '%' ],
 			'selectors' => [
@@ -173,7 +173,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
          Group_Control_Background::get_type(),
         [
             'name' => 'background',
-            'label' => __( 'Background', 'eg-addons' ),
+            'label' => __( 'Background', 'jh-addons' ),
             'types' => [ 'classic', 'gradient', 'video' ],
             'selector' => '{{WRAPPER}} .ega-iconbox',
         ]
@@ -187,7 +187,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->start_controls_section(
 			'_section_style_icon',
 			[
-				'label' => __( 'Icon', 'eg-addons' ),
+				'label' => __( 'Icon', 'jh-addons' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -195,7 +195,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label' => __( 'Size', 'eg-addons' ),
+				'label' => __( 'Size', 'jh-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -213,7 +213,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_padding',
 			[
-				'label' => __( 'Padding', 'eg-addons' ),
+				'label' => __( 'Padding', 'jh-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => ['px'],
 				'selectors' => [
@@ -225,7 +225,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_spacing',
 			[
-				'label' => __( 'Bottom Spacing', 'eg-addons' ),
+				'label' => __( 'Bottom Spacing', 'jh-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => ['px'],
 				'range' => [
@@ -250,7 +250,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_border_radius',
 			[
-				'label' => __( 'Border Radius', 'eg-addons' ),
+				'label' => __( 'Border Radius', 'jh-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -276,14 +276,14 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'_tab_icon_normal',
 			[
-				'label' => __( 'Normal', 'eg-addons' ),
+				'label' => __( 'Normal', 'jh-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'eg-addons' ),
+				'label' => __( 'Color', 'jh-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ega-iconbox-icon i' => 'color: {{VALUE}};',
@@ -296,7 +296,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_bg_color',
 			[
-				'label' => __( 'Background Color', 'eg-addons' ),
+				'label' => __( 'Background Color', 'jh-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ega-iconbox-icon' => 'background-color: {{VALUE}};',
@@ -307,7 +307,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_bg_rotate',
 			[
-				'label' => __( 'Rotate Icon Box', 'eg-addons' ),
+				'label' => __( 'Rotate Icon Box', 'jh-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'deg' ],
 				'default' => [
@@ -335,14 +335,14 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'_tab_button_hover',
 			[
-				'label' => __( 'Hover', 'eg-addons' ),
+				'label' => __( 'Hover', 'jh-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_hover_color',
 			[
-				'label' => __( 'Color', 'eg-addons' ),
+				'label' => __( 'Color', 'jh-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}:hover .ega-iconbox-icon i' => 'color: {{VALUE}};',
@@ -354,7 +354,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_hover_bg_color',
 			[
-				'label' => __( 'Background Color', 'eg-addons' ),
+				'label' => __( 'Background Color', 'jh-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}:hover .ega-iconbox-icon' => 'background-color: {{VALUE}};',
@@ -365,7 +365,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'eg-addons' ),
+				'label' => __( 'Border Color', 'jh-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}:hover .ega-iconbox-icon' => 'border-color: {{VALUE}};',
@@ -379,7 +379,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_hover_bg_rotate',
 			[
-				'label' => __( 'Rotate Icon Box', 'eg-addons' ),
+				'label' => __( 'Rotate Icon Box', 'jh-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'deg' ],
 				'default' => [
@@ -413,7 +413,7 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->start_controls_section(
 			'_section_style_title',
 			[
-				'label' => __( 'Title', 'eg-addons' ),
+				'label' => __( 'Title', 'jh-addons' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -440,14 +440,14 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'_tab_title_normal',
 			[
-				'label' => __( 'Normal', 'eg-addons' ),
+				'label' => __( 'Normal', 'jh-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Text Color', 'eg-addons' ),
+				'label' => __( 'Text Color', 'jh-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ega-iconbox-title' => 'color: {{VALUE}};',
@@ -460,14 +460,14 @@ class Ajax_Search__Icon_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'_tab_title_hover',
 			[
-				'label' => __( 'Hover', 'eg-addons' ),
+				'label' => __( 'Hover', 'jh-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'title_hover_color',
 			[
-				'label' => __( 'Text Color', 'eg-addons' ),
+				'label' => __( 'Text Color', 'jh-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}:hover .ega-iconbox-title' => 'color: {{VALUE}};',

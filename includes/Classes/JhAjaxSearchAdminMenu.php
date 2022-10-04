@@ -31,9 +31,10 @@ class JhAjaxSearchAdminMenu
      * Return admin menu page content
      */
     function jh_search_admin_page(){
-       $settings_page = new JhAjaxSettingsPage();
-       $settings_page->settings_page();
-
+       new JhAjaxSettingsPage();
+        ?>
+            <h1>Welcome to the settings</h1>
+        <?php
     }
 
 
